@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# 💰 Expense Control
+This application allows users to manage their personal budget in an intuitive and dynamic way. It offers a modern interface where users can set a budget, record and organize their expenses, and get a clear view of their financial situation in real time.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :star2: Features
+- **Set an initial budget** to keep track of your expenses.
+- **Add new expenses** with details like name, category, amount, and date.
+- **Edit or delete expenses** easily with swipe animations.
+- **Filter expenses by category**, enabling focused views.
+- **Dynamic chart** to visually represent spending.
+- **Reset button** to restart the app from scratch.
+- **LocalStorage persistence**, so expense data remains even after refreshing the page.
+- **Automatic calculation** of available budget and spent budget.
 
-Currently, two official plugins are available:
+## :gear: Technologies Used
+- **React with TypeScript:** For a robust, typed structure in managing components and states.
+- **Vite:** For fast and efficient development.
+- **Tailwind CSS:** For modern and flexible UI styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## :wrench: Performance Optimization
+To enhance performance, I implemented:
 
-## Expanding the ESLint configuration
+- **useContext:** To share global states, like budget and expenses, across components.
+- **useReducer:** For predictable and organized state management.
+- **useMemo:** For performance optimization by memoizing computed values.
+- **useState:** To manage local component states.
+- **Custom Hooks:** Implemented reusable logic to simplify and organize the code.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## :globe_with_meridians: Site
+**Site:** https://expense-control-sac.netlify.app/
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+To run this project locally, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/Expense-Control.git
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2. Navigate to the project folder
+```bash
+cd expense-control
+```
+### 3. Install dependencies
+```bash
+npm install
+```
+### 4. Start the application
+```bash
+npm run dev
+```
+### 5. Build the application
+```bash
+npm run build
 ```
