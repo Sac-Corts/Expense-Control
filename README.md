@@ -19,7 +19,7 @@ This application allows users to manage their personal budget in an intuitive an
 ## :wrench: Performance Optimization
 To enhance performance, I implemented:
 
-- **useContext:** To share global states, like budget and expenses, across components.
+- **ContextAPI:** To share global states, like budget and expenses, across components.
 - **useReducer:** For predictable and organized state management.
 - **useMemo:** For performance optimization by memoizing computed values.
 - **useState:** To manage local component states.
