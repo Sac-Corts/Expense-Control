@@ -5,6 +5,7 @@ import BudgetTracker from "./components/BudgetTracker"
 import ExpenseModal from "./components/ExpenseModal"
 import ExpenseList from "./components/ExpenseList"
 import FilterByCategory from "./components/FilterByCategory"
+import Services from "./components/Services"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <h1 className="uppercase text-center font-black text-4xl text-white">Expense Planner</h1>
       </header>
 
+
       <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg mt-10 p-10">
         {isValidBudget ? <BudgetTracker /> : <BudgetForm />}
       </div>
@@ -31,6 +33,7 @@ function App() {
           <FilterByCategory />
           <ExpenseList />
           <ExpenseModal />
+          <Services />
         </main>
       )}
     </>
